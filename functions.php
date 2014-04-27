@@ -105,6 +105,8 @@ add_action( 'wp_enqueue_scripts', 'classic_theme_scripts' );
  */
  
 require get_template_directory() . '/inc/custom-header.php';
+define('HEADER_IMAGE_WIDTH', 234);
+define('HEADER_IMAGE_HEIGHT', 133);
 
 /**
  * Custom template tags for this theme.

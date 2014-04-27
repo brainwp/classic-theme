@@ -672,3 +672,51 @@ object {
 	max-width: 11.11%;
 }
 .gallery-caption {}
+
+
+
+/*---------------- CSS BRASA   ------------- */
+
+/* Content definition */
+.content-definition {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+
+
+/* Header */
+
+.site-branding {
+	background: url('#') no-repeat #067e7c;
+	height: 160px;
+}
+
+.logo {
+	padding: 15px;
+}
+
+.main-navigation {
+	background: linear-gradient(#09a29f, #056e6a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0 auto 6px;
+    width: 100%;
+}
+
+.main-navigation a {
+    color: #fff;
+    display: block;
+    line-height: 3.333em;
+    padding: 0 1.2125em;
+    text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.main-navigation a:hover {
+    background: #6ccab8;
+	color: #fff;
+}
