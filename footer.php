@@ -9,7 +9,7 @@
 ?>
 
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="direitos">Todos os direitos reservados</div>	
 

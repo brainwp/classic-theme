@@ -420,10 +420,19 @@ a:active {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
+		
 	}
 
 	.main-navigation ul {
 		display: none;
+	}
+	
+	.inf-header{
+		display: none;
+	}
+
+	.site-branding {
+		padding-left: 
 	}
 }
 .site-main .comment-navigation,
@@ -819,15 +828,21 @@ object {
 
 /* Footer */
 
-#colophon {
+
+
+.site-footer {
 	clear: both;
+	background: #0b6365;
+	color: #fff;
+	height: auto;
+	margin-bottom: -22px;
 }
+
+
 
 #redes {
     float: right;
-    height: 35px;
-    margin: 35px 5px 0 0;
-    width: 12%;
+    margin: 18px 5px 0 0;
 }
 
 .a-redes {
@@ -838,14 +853,17 @@ object {
 
 .direitos {
 	float: left;
+	margin: 23px;
 }
 
 #facebook {
     background: url("images/img-redes-sociais.png") no-repeat scroll 3px 0 #3B5998;
+    margin-right: 8px;
 }
 
 #twitter {
     background: url("images/img-redes-sociais.png") no-repeat scroll 3px 0 #3B5998;
+    margin-right: 8px;
 }
 
 
