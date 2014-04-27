@@ -691,10 +691,34 @@ object {
 .site-branding {
 	background: url('#') no-repeat #067e7c;
 	height: 160px;
+	margin: 0 auto;
+    max-width: 1000px;
+    padding: 15px 0 0 25px;
 }
 
 .logo {
-	padding: 15px;
+	float: left;
+}
+
+.inf-header {
+	float: right;
+	width: 40%;
+	height: auto;
+	margin: 34px 50px 0 0 ;
+	}
+
+.inf-texto {
+	font-size: 1.2em;
+	float: right;
+	width: auto;
+	color: #fff;
+	font-weight:bold
+	padding:0;
+}
+
+.menu-principal-container {
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .main-navigation {
@@ -725,10 +749,33 @@ object {
 /* Home */
 .slider-home {
 	width: auto;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .pjc-slideshow-container {
 	min-width: 100%;
+}
+
+.area-categorias {
+	max-width: 1000px;
+	width: auto;
+	margin: 0 auto;
+}
+
+.area-categorias ul {
+	padding: 0;
+	margin: 0;
+}
+
+.categorias {
+	float: left;
+	width: 20%;
+	height: auto;
+	border-radius: 25px;
+	background: #06837f;
+	list-style: none;
+	margin:2%;
 }
 
 .faixa-inferior {
@@ -738,15 +785,31 @@ object {
 }
 
 .content-inferior {
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
-	margin: 2%;
+	margin: 40px 20px;
 }
 
 .marcas-content {
 	float:left;
 	width: 45%;
-	margin: 2%;
+	margin-left: 20px;
+}
+
+.titulo-inferior {
+	background: #6ccab8;
+	color: #fff;
+	font-size: 2em;
+	box-shadow: 6px 6px 3px #052f2e;
+	margin-bottom: 34px;
+    padding-left: 15px;
+    width: 142px;
+}
+
+.imagens-cliente {
+	float: left;
+	width: auto;
+	margin-right: 20px;
 }
 
 .clientes-content {
@@ -793,3 +856,21 @@ object {
     width: 34px;
 }	
 
+
+/* Tablets*/
+
+@media screen and (min-width: 301px) and (max-width: 600px) {
+	.categorias {
+		width: 40%;
+		margin: 5%;
+	}
+}
+
+/* Celulares */
+
+@media screen and (max-width: 300px) {
+	.categorias {
+		width: 90%;
+		margin: 10%;
+	}
+}

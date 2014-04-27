@@ -20,14 +20,22 @@ get_header(); ?>
 					echo do_shortcode("[pjc_slideshow slide_type='Slide-Home']");
 					?>
 				</div>
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php// while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
+					<?php// get_template_part( 'content', 'page' ); ?>
 
 
-				<?php endwhile; // end of the loop. ?>
+				<?php// endwhile; // end of the loop. ?>
 				
-				
+				<div class="area-categorias">
+					<ul>
+						<li class="categorias"><img src="#"></img></li>
+						<li class="categorias"><img src="#"></img></li>
+						<li class="categorias"><img src="#"></img></li>
+						<li class="categorias"><img src="#"></img></li>
+					</ul>	
+				</div>
+
 
 			</main><!-- #main -->
 		</div><!-- #primary -->

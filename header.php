@@ -34,10 +34,12 @@
 			
 				</a>
 				</div><!-- .logo -->
+				<div class="inf-header">
+					<h2 class="inf-texto"><?php echo get_option( 'mo_telefone',false ); ?></h2>
+					<h2 class="inf-texto"><?php echo get_option( 'mo_email',false ); ?></h2>
+				</div><!-- .inf-header-->	
 			</div><!-- .site-branding -->
-			
-			<?php echo get_option( 'mo_telefone',false ); ?>
-			<?php echo get_option( 'mo_email',false ); ?>
+
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'classic-theme' ); ?></h1>
