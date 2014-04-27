@@ -35,6 +35,9 @@
 				</a>
 				</div><!-- .logo -->
 			</div><!-- .site-branding -->
+			
+			<?php echo get_option( 'mo_telefone',false ); ?>
+			<?php echo get_option( 'mo_email',false ); ?>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'classic-theme' ); ?></h1>

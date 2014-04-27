@@ -16,11 +16,11 @@
 			
 			<div id="redes">
 				<div id="facebook">
-					<a class="a-redes" href="#"></a>
+					<a class="a-redes" href="<?php echo get_option( 'mo_facebook' ); ?>"></a>
 				</div><!-- #facebook -->
 				
 				<div id="twitter">
-					<a class="a-redes" href="#"></a>
+					<a class="a-redes" href="<?php echo get_option( 'mo_twitter' ); ?>"></a>
 				</div><!-- #twitter-->
 			</div><!-- #redes -->
 		</div><!-- .site-info -->
