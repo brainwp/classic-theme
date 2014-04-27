@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-    <div class="content-definition">
+   
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
 				<div class="logo">
@@ -43,5 +43,3 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
-
-		<div id="content" class="site-content">

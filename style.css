@@ -678,8 +678,9 @@ object {
 /*---------------- CSS BRASA   ------------- */
 
 /* Content definition */
-.content-definition {
-	width: 1100px;
+.wrapper{
+	max-width: 1100px;
+	width: auto;
 	margin: 0 auto;
 }
 
@@ -720,3 +721,75 @@ object {
     background: #6ccab8;
 	color: #fff;
 }
+
+/* Home */
+.slider-home {
+	width: auto;
+}
+
+.pjc-slideshow-container {
+	min-width: 100%;
+}
+
+.faixa-inferior {
+	width: 100%;
+	background: url('#') no-repeat #067e7c;
+	display: table;
+}
+
+.content-inferior {
+	max-width: 1100px;
+	margin: 0 auto;
+	margin: 2%;
+}
+
+.marcas-content {
+	float:left;
+	width: 45%;
+	margin: 2%;
+}
+
+.clientes-content {
+	float:left;
+	width: 45%;
+}
+
+/* Footer */
+
+#colophon {
+	clear: both;
+}
+
+#redes {
+    float: right;
+    height: 35px;
+    margin: 35px 5px 0 0;
+    width: 12%;
+}
+
+.a-redes {
+    height: 34px;
+    position: absolute;
+    width: 34px;
+}
+
+.direitos {
+	float: left;
+}
+
+#facebook {
+    background: url("images/img-redes-sociais.png") no-repeat scroll 3px 0 #3B5998;
+}
+
+#twitter {
+    background: url("images/img-redes-sociais.png") no-repeat scroll 3px 0 #3B5998;
+}
+
+
+#facebook, #twitter {
+    border-radius: 3px;
+    float: left;
+    height: 34px;
+    width: 34px;
+}	
+
