@@ -702,18 +702,18 @@ object {
 	height: 160px;
 	margin: 0 auto;
     max-width: 1000px;
-    padding: 15px 0 0 25px;
 }
 
 .logo {
 	float: left;
+	margin: 15px 0 0 60px ;
 }
 
 .inf-header {
 	float: right;
 	width: 40%;
 	height: auto;
-	margin: 34px 50px 0 0 ;
+	margin: 50px 80px 0 0 ;
 	}
 
 .inf-texto {
@@ -759,7 +759,7 @@ object {
 .slider-home {
 	width: auto;
 	max-width: 850px;
-	margin: 0 auto;
+	margin: 25px auto;
 }
 
 .pjc-slideshow-container {
@@ -808,7 +808,7 @@ object {
 .marcas-content {
 	float:left;
 	width: 45%;
-	margin-left: 20px;
+	margin: 30px 40px 40px;
 }
 
 .titulo-inferior {
@@ -830,6 +830,7 @@ object {
 .clientes-content {
 	float:left;
 	width: 45%;
+	margin: 40px 0 60px 40px;
 }
 
 /* Footer */
@@ -863,12 +864,16 @@ object {
 }
 
 #facebook {
-    background: url("images/img-redes-sociais.png") no-repeat scroll 3px 0 #3B5998;
+    background: url("images/facebook.png") no-repeat scroll 3px 0 ;
+       border-radius: 3px;
+    border: #fff solid 1px; 
     margin-right: 8px;
 }
 
 #twitter {
-    background: url("images/img-redes-sociais.png") no-repeat scroll 3px 0 #3B5998;
+    background: url("images/twitter.png") no-repeat scroll 3px 0 ;
+    border-radius: 3px;
+    border: #fff solid 1px; 
     margin-right: 8px;
 }
 
@@ -876,8 +881,8 @@ object {
 #facebook, #twitter {
     border-radius: 3px;
     float: left;
-    height: 34px;
-    width: 34px;
+    height: 40px;
+    width: 45px;
 }	
 
 
@@ -886,7 +891,7 @@ object {
 @media screen and (min-width: 301px) and (max-width: 950px) {
 	.categorias {
 		width: 155px;
-		margin: 4% 4% 4% 14%;
+		margin: 4% 4% 4% 19%;
 	}
 }
 
@@ -894,8 +899,8 @@ object {
 
 @media (max-width: 300px) {
 	.categorias {
-		margin: 0 26%;
-    	width: 68%;
+		margin: 4% 4% 4% 35%;
+    	width: 155px;
 	}
 
 	.marcas-content, .clientes-content {
