@@ -129,5 +129,7 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 //Adiciona as Minhas Opções
-require_once (get_stylesheet_directory() . '/options/admin_options.php');
+require_once ( get_stylesheet_directory() . '/options/admin_options.php' );
 
+//Adiciona o CPT Produtos
+require_once ( get_stylesheet_directory() . '/inc/custom-produtos.php' );
