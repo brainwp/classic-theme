@@ -782,15 +782,23 @@ object {
 	margin: 1% 2% 4% 4%;
     width: 155px;
 	height: auto;
-	border-radius: 25px;
+	min-height: 190px;
+	border-radius: 10px;
 	background: #06837f;
 	list-style: none;
-	min-width: 
+	padding: 15px;
+	text-align: center;
 }
 
-.img-cat {
-	margin: 12px 0 0 22px;
+.categorias img {
+	margin: 12px auto 0 auto;
+}
 
+.categorias a {
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 2em;
 }
 
 .faixa-inferior {
@@ -802,7 +810,8 @@ object {
 .content-inferior {
 	max-width: 1200px;
 	margin: 0 auto;
-	margin: 40px 20px;
+	margin: 40px auto;
+	overflow: hidden;
 }
 
 .marcas-content {

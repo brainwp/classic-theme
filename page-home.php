@@ -48,7 +48,6 @@ get_header(); ?>
 					</ul>	
 				</div>
 
-
 			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div><!-- #content -->
