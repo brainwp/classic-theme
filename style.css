@@ -694,12 +694,19 @@ object {
 }
 
 
-
 /* Header */
 
+#masthead {
+	background: url('images/cabecalho.jpg') no-repeat #067e7c;
+}
+
+#masthead .menu {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
 .site-branding {
-	background: url('#') no-repeat #067e7c;
-	height: 160px;
+	height: 155px;
 	margin: 0 auto;
     max-width: 1000px;
 }
@@ -808,7 +815,7 @@ object {
 }
 
 .content-inferior {
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto;
 	margin: 40px auto;
 	overflow: hidden;
@@ -827,7 +834,9 @@ object {
 	box-shadow: 6px 6px 3px #052f2e;
 	margin-bottom: 34px;
     padding-left: 15px;
-    width: 142px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 15px;
 }
 
 .imagens-cliente {
@@ -853,7 +862,7 @@ object {
 }
 
 .site-footer .site-info {
-	max-width: 1280px;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 
