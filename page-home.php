@@ -29,10 +29,10 @@ get_header(); ?>
 				
 				<div class="area-categorias">
 					<ul>
-						<li class="categorias"><img src="#"></img></li>
-						<li class="categorias"><img src="#"></img></li>
-						<li class="categorias"><img src="#"></img></li>
-						<li class="categorias"><img src="#"></img></li>
+						<li class="categorias"><img src="http://127.0.0.1/WordPress-Dev/wp-content/uploads/2014/04/categoria-1.jpg" class="img-cat"></img></li>
+						<li class="categorias"><img src="http://127.0.0.1/WordPress-Dev/wp-content/uploads/2014/04/categoria-1.jpg" class="img-cat"></img></li>
+						<li class="categorias"><img src="http://127.0.0.1/WordPress-Dev/wp-content/uploads/2014/04/categoria-1.jpg" class="img-cat"></img></li>
+						<li class="categorias"><img src="http://127.0.0.1/WordPress-Dev/wp-content/uploads/2014/04/categoria-1.jpg" class="img-cat"></img></li>
 					</ul>	
 				</div>
 

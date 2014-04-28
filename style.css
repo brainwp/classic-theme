@@ -779,12 +779,18 @@ object {
 
 .categorias {
 	float: left;
-	width: 20%;
+	margin: 4% 4% 4% 5%;
+    width: 155px;
 	height: auto;
 	border-radius: 25px;
 	background: #06837f;
 	list-style: none;
-	margin:2%;
+	min-width: 
+}
+
+.img-cat {
+	margin: 12px 0 0 22px;
+
 }
 
 .faixa-inferior {
@@ -877,18 +883,24 @@ object {
 
 /* Tablets*/
 
-@media screen and (min-width: 301px) and (max-width: 600px) {
+@media screen and (min-width: 301px) and (max-width: 950px) {
 	.categorias {
-		width: 40%;
-		margin: 5%;
+		width: 155px;
+		margin: 4% 4% 4% 14%;
 	}
 }
 
 /* Celulares */
 
-@media screen and (max-width: 300px) {
+@media (max-width: 300px) {
 	.categorias {
-		width: 90%;
-		margin: 10%;
+		margin: 0 26%;
+    	width: 68%;
 	}
+
+	.marcas-content, .clientes-content {
+	    margin: 0 26%;
+	    width: 68%;
+	}
+	
 }
