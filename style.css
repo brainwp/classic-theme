@@ -758,7 +758,7 @@ object {
 /* Home */
 .slider-home {
 	width: auto;
-	max-width: 1000px;
+	max-width: 850px;
 	margin: 0 auto;
 }
 
@@ -767,7 +767,7 @@ object {
 }
 
 .area-categorias {
-	max-width: 1000px;
+	max-width: 850px;
 	width: auto;
 	margin: 0 auto;
 }
@@ -779,7 +779,7 @@ object {
 
 .categorias {
 	float: left;
-	margin: 4% 4% 4% 5%;
+	margin: 1% 2% 4% 4%;
     width: 155px;
 	height: auto;
 	border-radius: 25px;
