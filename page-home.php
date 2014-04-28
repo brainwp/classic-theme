@@ -29,10 +29,22 @@ get_header(); ?>
 				
 				<div class="area-categorias">
 					<ul>
-						<li class="categorias"><img src="http://127.0.0.1/WordPress-Dev/wp-content/uploads/2014/04/categoria-1.jpg" class="img-cat"></img></li>
-						<li class="categorias"><img src="http://127.0.0.1/WordPress-Dev/wp-content/uploads/2014/04/categoria-1.jpg" class="img-cat"></img></li>
-						<li class="categorias"><img src="http://127.0.0.1/WordPress-Dev/wp-content/uploads/2014/04/categoria-1.jpg" class="img-cat"></img></li>
-						<li class="categorias"><img src="http://127.0.0.1/WordPress-Dev/wp-content/uploads/2014/04/categoria-1.jpg" class="img-cat"></img></li>
+						<li class="categorias">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tv-categoria.png" />
+							<a href="<?php echo home_url(); ?>/categoria/tv">IPTV</a>
+						</li>
+						<li class="categorias">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dth-categoria.png" />
+							<a href="<?php echo home_url(); ?>/categoria/dht">DTH</a>
+						</li>
+						<li class="categorias">
+							<img <img class="img-cat" src="<?php echo get_stylesheet_directory_uri(); ?>/images/catv-categoria.png" />
+							<a href="<?php echo home_url(); ?>/categoria/catv">CATV</a>
+						</li>
+						<li class="categorias">
+							<img class="img-cat" src="<?php echo get_stylesheet_directory_uri(); ?>/images/cabo-categoria.png" />
+							<a href="<?php echo home_url(); ?>/categoria/cabo">CABO</a>
+						</li>
 					</ul>	
 				</div>
 
