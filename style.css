@@ -844,8 +844,6 @@ object {
 
 /* Footer */
 
-
-
 .site-footer {
 	clear: both;
 	background: #0b6365;
@@ -854,11 +852,18 @@ object {
 	margin-bottom: -22px;
 }
 
-
+.site-footer .site-info {
+	max-width: 1280px;
+	margin: 0 auto;
+}
 
 #redes {
     float: right;
-    margin: 18px 5px 0 0;
+    margin: 15px 5px 0 0;
+}
+
+#redes > * {
+	border: none !important;
 }
 
 .a-redes {
