@@ -17,7 +17,7 @@ function create_post_type_produtos() {
     $labels = array(
 	    'name' => _x('Produtos', 'post type general name'),
 	    'singular_name' => _x('Produto', 'post type singular name'),
-	    'add_new' => _x('Novo Produto', 'projeto'),
+	    'add_new' => _x('Novo Produto', 'produto'),
 	    'add_new_item' => __('Novo Produto'),
 	    'edit_item' => __('Editar Produto'),
 	    'new_item' => __('Novo Produto'),
@@ -34,7 +34,7 @@ function create_post_type_produtos() {
      * Registamos o tipo de post produtos através desta função
      * passando-lhe os labels e parâmetros de controlo.
      */
-    register_post_type( 'projetos', array(
+    register_post_type( 'produtos', array(
 	    'labels' => $labels,
 	    'public' => true,
 	    'publicly_queryable' => true,
