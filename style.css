@@ -140,6 +140,7 @@ textarea {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+font-family: 'PT Sans Narrow', 'sans-serif';
 }
 p {
 	margin-bottom: 1.5em;
@@ -706,21 +707,21 @@ object {
 }
 
 .site-branding {
-	height: 155px;
+	height: 165px;
 	margin: 0 auto;
     max-width: 1000px;
 }
 
 .logo {
 	float: left;
-	margin: 15px 0 0 60px ;
+	margin: 20px 0 0 60px ;
 }
 
 .inf-header {
 	float: right;
 	width: 40%;
 	height: auto;
-	margin: 50px 80px 0 0 ;
+	margin: 52px 80px 0 0 ;
 	}
 
 .inf-texto {
@@ -738,23 +739,25 @@ object {
 }
 
 .main-navigation {
-	background: linear-gradient(#09a29f, #056e6a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: #056e6a;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     clear: both;
     display: block;
     float: left;
-    margin: 0 auto 6px;
+    margin: 0 auto;
     width: 100%;
 }
 
 .main-navigation a {
     color: #fff;
     display: block;
-    line-height: 3.333em;
-    padding: 0 1.2125em;
+    font-family: pt sans narrow;
+    font-size: 1.7em;
+    font-weight: inherit;
+    line-height: 2em;
+    padding: 0 1.12em;
     text-decoration: none;
 	text-transform: uppercase;
-	font-weight: bold;
 }
 
 .main-navigation a:hover {
@@ -806,6 +809,7 @@ object {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 2em;
+	font-family: pt sans narrow;
 }
 
 .faixa-inferior {
