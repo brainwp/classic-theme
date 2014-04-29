@@ -140,8 +140,13 @@ textarea {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-font-family: 'PT Sans Narrow', 'sans-serif';
+	font-family: 'PT Sans Narrow', 'sans-serif';
 }
+
+h1 { font-size: 2.4em;}
+h2 {font-size: 1em;}
+h3 {font-size: 0.8em}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -689,9 +694,8 @@ object {
 
 /* Content definition */
 .wrapper{
-	max-width: 1100px;
 	width: auto;
-	margin: 0 auto;
+	background: url('images/bg-content.png');
 }
 
 
@@ -769,7 +773,7 @@ object {
 .slider-home {
 	width: auto;
 	max-width: 850px;
-	margin: 25px auto;
+	margin: 40px auto;
 }
 
 .pjc-slideshow-container {
@@ -814,7 +818,7 @@ object {
 
 .faixa-inferior {
 	width: 100%;
-	background: url('#') no-repeat #067e7c;
+	background: url('images/bg-rodape.png') #067e7c;
 	display: table;
 }
 
@@ -916,7 +920,7 @@ object {
 
 .content-1000 {
 	max-width: 1000px;
-	margin: 55px auto;
+	margin: 40px auto;
 }
 
 .caixa-produto-descricao h1{

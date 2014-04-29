@@ -17,7 +17,7 @@ get_header(); ?>
 			<main id="main" class="site-main" role="main">
 				<div class="slider-home">
 					<?php
-					echo do_shortcode("[pjc_slideshow slide_type='Slide-Home']");
+					echo do_shortcode("[metaslider id=47]");
 					?>
 				</div>
 				<?php// while ( have_posts() ) : the_post(); ?>
