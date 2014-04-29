@@ -912,6 +912,57 @@ object {
 }	
 
 
+/* Single Produtos */
+
+.content-1000 {
+	max-width: 1000px;
+	margin: 55px auto;
+}
+
+.caixa-produto-descricao h1{
+	font-size: 2em;
+}
+
+.produto-img {
+	float: left;
+	 margin-left: 6%;
+    width: 50%;
+	background: #eee;
+	height: 400px;
+	margin-bottom: 55px;
+}
+
+.caixa-produto-descricao {
+	float: right;
+	width: 40%;
+	margin-top: 20px;
+}
+
+.posts-rel {
+	clear: both;
+	margin: 0 auto;
+}
+
+.posts-rel h1{
+	font-size: 2em;
+	margin-left: 8%;
+}
+
+.posts-rel h2{
+	font-size: 1.5em;
+	padding: 0.2em 0;
+}	
+
+.posts-rel li {
+	width: 20%;
+	margin: 20px 2% 55px;
+	padding: 33px 33px 0;
+	float: left;
+	background: #eee;
+	max-width: 1280px;
+	list-style: none;
+}
+
 /* Tablets*/
 
 @media screen and (min-width: 301px) and (max-width: 950px) {
