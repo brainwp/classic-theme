@@ -828,7 +828,7 @@ object {
 .marcas-content {
 	float:left;
 	width: 45%;
-	margin: 30px 40px 40px;
+	margin: 40px 0 40px 40px;
 }
 
 .titulo-inferior {
@@ -840,7 +840,7 @@ object {
     padding-left: 15px;
     display: inline-block;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 0 15px;
 }
 
 .imagens-cliente {
@@ -852,7 +852,7 @@ object {
 .clientes-content {
 	float:left;
 	width: 45%;
-	margin: 40px 0 60px 40px;
+	margin: 40px 0 0 20px;
 }
 
 /* Footer */
