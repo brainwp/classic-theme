@@ -14,22 +14,30 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-
+			<div class="content-1100">
+				<div class="nav-categorias">
+					<ul>
+						<li><h2><img src="/images/tv-categoria-peq.png">IPTV</h2></li>
+						<li><h2><img src="/images/dth-categoria-peq.png">DTH</h2></li>
+						<li><h2><img src="/images/catv-categoria-peq.png">CATV</h2></li>
+						<li><h2><img src="/images/cabo-categoria-peq.png">CABO</h2></li>
+					</ul>	
+				</div>
+				<div class="produtos-archive">
+					<ul>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+						<li><img src="#"><h2>Outro Produto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut quam consequat, sodales massa sit amet, accumsan augue.</p></li>
+					</ul>
+				</div><!-- .produtos-archive -->
+			</div><!-- .content-1100-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
