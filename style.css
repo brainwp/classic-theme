@@ -849,7 +849,7 @@ object {
 .imagens-cliente {
 	float: left;
 	width: auto;
-	margin-right: 20px;
+	margin-right: 5px;
 }
 
 .clientes-content {
@@ -945,6 +945,7 @@ object {
 .posts-rel {
 	clear: both;
 	margin: 0 auto;
+	max-width: 1570px;
 }
 
 .posts-rel h1{
