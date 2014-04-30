@@ -17,10 +17,10 @@ get_header(); ?>
 			<div class="content-1100">
 				<div class="nav-categorias">
 					<ul>
-						<li><h2><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tv-categoria-peq.png" />IPTV</h2></li>
-						<li><h2><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dth-categoria-peq.png" />DTH</h2></li>
-						<li><h2><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/catv-categoria-peq.png" />CATV</h2></li>
-						<li><h2><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cabo-categoria-peq.png" />CABO</h2></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tv-categoria-peq.png" />IPTV</a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dth-categoria-peq.png" />DTH</a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/catv-categoria-peq.png" />CATV</a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cabo-categoria-peq.png" />CABO</a></li>
 					</ul>	
 				</div>
 				<div class="produtos-archive">
