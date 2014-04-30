@@ -756,9 +756,9 @@ object {
     color: #fff;
     display: block;
     font-family: pt sans narrow;
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: inherit;
-    line-height: 2em;
+    line-height: 2.1em;
     padding: 0 1.12em;
     text-decoration: none;
 	text-transform: uppercase;
@@ -916,6 +916,13 @@ object {
 }	
 
 
+/* Page */
+
+.content-850 {
+	max-width: 850px;
+	margin: 40px auto;
+}
+
 /* Single Produtos */
 
 .content-1000 {
@@ -958,7 +965,7 @@ object {
 	padding: 0.3em 0;
 }	
 
-.posts-rel, .produtos-archive li {
+.posts-rel li, .produtos-archive li {
 	width: 20%;
 	margin: 20px 2% 10px;
 	padding: 33px 33px 0;
@@ -967,6 +974,10 @@ object {
 	max-width: 320px;
 	min-width: 230px;
 	list-style: none;
+}
+
+.posts-rel {
+	margin: 0 auto;
 }
 
 /* Archive Produtos */
@@ -1000,9 +1011,10 @@ object {
 }
 
 .nav-categorias a {
-	font-size: 1.5em;
+	font-size: 1.6em;
 	color: #fff;
 	text-decoration: none;
+	font-family: pt sans narrow;
 }
 
 .produtos-archive {
