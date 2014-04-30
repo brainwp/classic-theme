@@ -985,7 +985,7 @@ object {
 	text-align: center;
 	background: #056E6A;
 	color: #fff; 
-	line-height: 40px;
+	line-height: 50px;
 	margin-bottom: 18px;
 	box-shadow: 3px 3px 3px #052F2E;
 }
@@ -996,7 +996,7 @@ object {
 }
 
 .nav-categorias img {
-	margin-right: 25px;
+	margin: -11px 0 0 16px;
 }
 
 .nav-categorias h2 {
