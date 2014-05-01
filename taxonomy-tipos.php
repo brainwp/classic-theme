@@ -17,7 +17,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<h1 class="page-title">
-					<?php _e( 'Produtos', 'classic-theme' ); ?>
+					<?php _e( 'Produtos', 'classic-theme' ); ?> / <?php single_term_title(); ?> 
 				</h1>
 				<?php
 					// Show an optional term description.
