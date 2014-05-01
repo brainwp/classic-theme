@@ -39,7 +39,7 @@
 
 					<?php endwhile; wp_reset_query(); ?>
 				</ul>
-			</div>
+			</div><!-- .content-1100 -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

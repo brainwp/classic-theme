@@ -46,10 +46,9 @@ get_header(); ?>
 								} else {
 								$thumb_relacionados = get_template_directory_uri() . "/images/default-classic-500.png";
 							} ?>
-							<li><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumb_relacionados; ?>"></a>
+							<li>
+								<div class="image"><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumb_relacionados; ?>"></a></div>
 								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-								<?php the_excerpt(); ?>
-								<a class="mais" href="<?php the_permalink(); ?>">Leia mais>></a>
 							</li>
 
 							<?php endwhile; ?>
