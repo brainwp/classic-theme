@@ -873,11 +873,8 @@ object {
 	clear: both;
 	background: #0b6365;
 	color: #fff;
-	height: auto;
-	margin-bottom: -22px;
     bottom: 0;
-    height: 30px;
-    margin-top: -30px;
+    margin: -15px 0 -25px 0;
     overflow: hidden;
     width: 100%;
 }
