@@ -11,62 +11,13 @@ get_header(); ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="content-1000">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<h1 class="page-title">
-					<?php
-						if ( is_category() ) :
-							single_cat_title();
-
-						elseif ( is_tag() ) :
-							single_tag_title();
-
-						elseif ( is_author() ) :
-							printf( __( 'Author: %s', 'classic-theme' ), '<span class="vcard">' . get_the_author() . '</span>' );
-
-						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'classic-theme' ), '<span>' . get_the_date() . '</span>' );
-
-						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'classic-theme' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'classic-theme' ) ) . '</span>' );
-
-						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'classic-theme' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'classic-theme' ) ) . '</span>' );
-
-						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'classic-theme' );
-
-						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-							_e( 'Galleries', 'classic-theme');
-
-						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'classic-theme');
-
-						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', 'classic-theme' );
-
-						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'classic-theme' );
-
-						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', 'classic-theme' );
-
-						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
-							_e( 'Statuses', 'classic-theme' );
-
-						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							_e( 'Audios', 'classic-theme' );
-
-						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
-							_e( 'Chats', 'classic-theme' );
-
-						else :
-							_e( 'Archives', 'classic-theme' );
-
-						endif;
-					?>
+					<?php _e( 'Produtos', 'classic-theme' ); ?>
 				</h1>
 				<?php
 					// Show an optional term description.
@@ -77,29 +28,44 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<div class="content-1100">
+				<div class="nav-categorias">
+					<ul>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tv-categoria-peq.png" />IPTV</a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dth-categoria-peq.png" />DTH</a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/catv-categoria-peq.png" />CATV</a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cabo-categoria-peq.png" />CABO</a></li>
+					</ul>	
+				</div>
+				<div class="produtos-archive">
+					<ul>
+						<?php /* Start the Loop */ ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+							<?php if ( has_post_thumbnail() ) {
+								$thumb_relacionados = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
+								} else {
+								$thumb_relacionados = get_template_directory_uri() . "/images/default-classic-500.png";
+							} ?>
+							<li><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumb_relacionados; ?>"></a>
+								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+								<?php the_excerpt(); ?>
+								<a class="mais" href="<?php the_permalink(); ?>">Leia mais>></a>
+							</li>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+							<?php endwhile; ?>
 
-			<?php endwhile; ?>
+							<?php classic_theme_paging_nav(); ?>
 
-			<?php classic_theme_paging_nav(); ?>
+						<?php else : ?>
 
-		<?php else : ?>
+							<?php get_template_part( 'content', 'none' ); ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
+						<?php endif; ?>
+					</ul>
+				</div><!-- .produtos-archive -->
+			</div><!-- .content-1100-->
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

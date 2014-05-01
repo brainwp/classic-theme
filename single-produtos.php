@@ -27,7 +27,7 @@
 					<?php $relacionados = new WP_Query( array( 'post_type' => 'produtos', 'posts_per_page' => 4 ) ); ?>
 					<?php while ( $relacionados->have_posts() ) : $relacionados->the_post(); ?>
 					<?php if ( has_post_thumbnail() ) {
-						$thumb_relacionados = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+						$thumb_relacionados = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 						} else {
 						$thumb_relacionados = get_template_directory_uri() . "/images/default-classic-500.png";
 					} ?>
