@@ -939,6 +939,7 @@ object {
 .content-1000 {
 	max-width: 1000px;
 	margin: 40px auto;
+	min-height: 1000px;
 }
 
 .caixa-produto-descricao h1{
