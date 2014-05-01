@@ -30,15 +30,15 @@ get_header(); ?>
 				<div class="area-categorias">
 					<ul>
 						<li class="categorias">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tv-categoria.png" />
+							<img class="img-cat" src="<?php echo get_stylesheet_directory_uri(); ?>/images/tv-categoria.png" />
 							<a href="<?php echo home_url(); ?>/tipo/tv">IPTV</a>
 						</li>
 						<li class="categorias">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dth-categoria.png" />
+							<img class="img-cat" src="<?php echo get_stylesheet_directory_uri(); ?>/images/dth-categoria.png" />
 							<a href="<?php echo home_url(); ?>/tipo/dht">DTH</a>
 						</li>
 						<li class="categorias">
-							<img <img class="img-cat" src="<?php echo get_stylesheet_directory_uri(); ?>/images/catv-categoria.png" />
+							<img class="img-cat" src="<?php echo get_stylesheet_directory_uri(); ?>/images/catv-categoria.png" />
 							<a href="<?php echo home_url(); ?>/tipo/catv">CATV</a>
 						</li>
 						<li class="categorias">
@@ -46,7 +46,7 @@ get_header(); ?>
 							<a href="<?php echo home_url(); ?>/tipo/cabo">CABO</a>
 						</li>
 					</ul>	
-				</div>
+				</div><!-- .area-categorias -->
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
@@ -131,6 +131,6 @@ get_header(); ?>
 </div><!-- .faixa-inferior-->	
 	
 
-</div><!-- .geral -->
+
 
 <?php get_footer(); ?>

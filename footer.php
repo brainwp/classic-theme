@@ -8,9 +8,11 @@
  */
 ?>
 
+
+</div><!-- #page -->
 <div class="clear"></div>
 </div><!-- .geral -->
-
+	
 	<footer class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="direitos">Todos os direitos reservados</div>	
