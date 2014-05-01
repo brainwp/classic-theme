@@ -936,23 +936,46 @@ object {
 
 .produto-img {
 	float: left;
-	 margin-left: 6%;
+	margin-left: 6%;
     width: 50%;
 	background: #eee;
-	height: 400px;
+	height: 500px;
 	margin-bottom: 55px;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.produto-img img {
+	width: 100%;
+}
+
+.entry-footer .edit-link a {
+	color: #666;
+	text-decoration: none;
+	padding: 10px 12px;
+	background-color: #EEE;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.entry-footer .edit-link a:hover {
+	background-color: #056e6a;
+	color: #FFF;
 }
 
 .caixa-produto-descricao {
 	float: right;
 	width: 40%;
-	margin-top: 20px;
 }
 
 .posts-rel {
 	clear: both;
 	margin: 0 auto;
 	max-width: 1570px;
+	overflow: hidden;
 }
 
 .posts-rel h1{
@@ -966,9 +989,9 @@ object {
 }	
 
 .posts-rel li, .produtos-archive li {
-	width: 20%;
-	margin: 20px 2% 10px;
-	padding: 33px 33px 0;
+	width: 23%;
+	margin: 20px 2% 10px 2%;
+	padding: 20px;
 	float: left;
 	background: #eee;
 	max-width: 320px;
@@ -976,8 +999,9 @@ object {
 	list-style: none;
 }
 
-.posts-rel {
-	margin: 0 auto;
+.posts-rel ul li {
+	margin: 20px 1% 10px 1%;
+	font-size: 0.8em;
 }
 
 /* Archive Produtos */
