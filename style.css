@@ -140,7 +140,13 @@ textarea {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: 'PT Sans Narrow', 'sans-serif';
 }
+
+h1 { font-size: 2.4em;}
+h2 {font-size: 1em;}
+h3 {font-size: 0.8em}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -688,9 +694,8 @@ object {
 
 /* Content definition */
 .wrapper{
-	max-width: 1100px;
 	width: auto;
-	margin: 0 auto;
+	background: url('images/bg-content.png');
 }
 
 
@@ -706,21 +711,21 @@ object {
 }
 
 .site-branding {
-	height: 155px;
+	height: 165px;
 	margin: 0 auto;
     max-width: 1000px;
 }
 
 .logo {
 	float: left;
-	margin: 15px 0 0 60px ;
+	margin: 20px 0 0 60px ;
 }
 
 .inf-header {
 	float: right;
 	width: 40%;
 	height: auto;
-	margin: 50px 80px 0 0 ;
+	margin: 52px 80px 0 0 ;
 	}
 
 .inf-texto {
@@ -738,23 +743,25 @@ object {
 }
 
 .main-navigation {
-	background: linear-gradient(#09a29f, #056e6a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: #056e6a;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     clear: both;
     display: block;
     float: left;
-    margin: 0 auto 6px;
+    margin: 0 auto;
     width: 100%;
 }
 
 .main-navigation a {
     color: #fff;
     display: block;
-    line-height: 3.333em;
-    padding: 0 1.2125em;
+    font-family: pt sans narrow;
+    font-size: 1.6em;
+    font-weight: inherit;
+    line-height: 2.1em;
+    padding: 0 1.12em;
     text-decoration: none;
 	text-transform: uppercase;
-	font-weight: bold;
 }
 
 .main-navigation a:hover {
@@ -766,7 +773,7 @@ object {
 .slider-home {
 	width: auto;
 	max-width: 850px;
-	margin: 25px auto;
+	margin: 40px auto;
 }
 
 .pjc-slideshow-container {
@@ -806,25 +813,25 @@ object {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 2em;
+	font-family: pt sans narrow;
 }
 
 .faixa-inferior {
 	width: 100%;
-	background: url('#') no-repeat #067e7c;
+	background: url('images/bg-rodape.png') #067e7c;
 	display: table;
 }
 
 .content-inferior {
 	max-width: 1280px;
 	margin: 0 auto;
-	margin: 40px auto;
 	overflow: hidden;
 }
 
 .marcas-content {
 	float:left;
 	width: 45%;
-	margin: 30px 40px 40px;
+	margin: 40px 0 40px 40px;
 }
 
 .titulo-inferior {
@@ -836,19 +843,19 @@ object {
     padding-left: 15px;
     display: inline-block;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 0 15px;
 }
 
 .imagens-cliente {
 	float: left;
 	width: auto;
-	margin-right: 20px;
+	margin-right: 5px;
 }
 
 .clientes-content {
 	float:left;
 	width: 45%;
-	margin: 40px 0 60px 40px;
+	margin: 40px 0 0 20px;
 }
 
 /* Footer */
@@ -907,6 +914,113 @@ object {
     height: 40px;
     width: 45px;
 }	
+
+
+/* Page */
+
+.content-850 {
+	max-width: 850px;
+	margin: 40px auto;
+}
+
+/* Single Produtos */
+
+.content-1000 {
+	max-width: 1000px;
+	margin: 40px auto;
+}
+
+.caixa-produto-descricao h1{
+	font-size: 2em;
+}
+
+.produto-img {
+	float: left;
+	 margin-left: 6%;
+    width: 50%;
+	background: #eee;
+	height: 400px;
+	margin-bottom: 55px;
+}
+
+.caixa-produto-descricao {
+	float: right;
+	width: 40%;
+	margin-top: 20px;
+}
+
+.posts-rel {
+	clear: both;
+	margin: 0 auto;
+	max-width: 1570px;
+}
+
+.posts-rel h1{
+	font-size: 2em;
+	margin-left: 8%;
+}
+
+.posts-rel h2{
+	font-size: 1.5em;
+	padding: 0.3em 0;
+}	
+
+.posts-rel li, .produtos-archive li {
+	width: 20%;
+	margin: 20px 2% 10px;
+	padding: 33px 33px 0;
+	float: left;
+	background: #eee;
+	max-width: 320px;
+	min-width: 230px;
+	list-style: none;
+}
+
+.posts-rel {
+	margin: 0 auto;
+}
+
+/* Archive Produtos */
+.content-1100 {
+	max-width: 1100px;
+	margin: 10px auto;
+}
+
+.nav-categorias {
+	float: left;
+	margin: 20px 0 0 20px;
+}
+
+.nav-categorias li {
+	width: 142px;
+	text-align: center;
+	background: #056E6A;
+	line-height: 50px;
+	margin-bottom: 18px;
+	box-shadow: 3px 3px 3px #052F2E;
+}
+
+.nav-categorias ul {
+	list-style: none;
+	margin: 0;
+}
+
+.nav-categorias img {
+	margin: 5px 0 0 18px;
+	float: left;
+}
+
+.nav-categorias a {
+	font-size: 1.6em;
+	color: #fff;
+	text-decoration: none;
+	font-family: pt sans narrow;
+}
+
+.produtos-archive {
+	float: left;
+    max-width: 900px;
+}
 
 
 /* Tablets*/
