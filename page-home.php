@@ -130,4 +130,7 @@ get_header(); ?>
 	</div><!-- .content-inferior-->	
 </div><!-- .faixa-inferior-->	
 	
+
+</div><!-- .geral -->
+
 <?php get_footer(); ?>

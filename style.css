@@ -80,8 +80,9 @@ html {
 	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
 	box-sizing:         border-box;
 }
-body {
+body, html {
 	background: #fff;
+	height: 100%;
 }
 article,
 aside,
@@ -692,6 +693,14 @@ object {
 
 /*---------------- CSS BRASA   ------------- */
 
+#geral {
+	margin: 0 auto;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
 /* Content definition */
 .wrapper{
 	width: auto;
@@ -866,6 +875,11 @@ object {
 	color: #fff;
 	height: auto;
 	margin-bottom: -22px;
+    bottom: 0;
+    height: 30px;
+    margin-top: -30px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .site-footer .site-info {
