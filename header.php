@@ -39,8 +39,8 @@
 				</a>
 				</div><!-- .logo -->
 				<div class="inf-header">
-					<h2 class="inf-texto"><?php echo get_option( 'mo_telefone',false ); ?></h2>
-					<h2 class="inf-texto"><?php echo get_option( 'mo_email',false ); ?></h2>
+					<h2 class="inf-texto"><?php echo of_get_option( 'mo_telefone' ); ?></h2>
+					<h2 class="inf-texto"><?php echo of_get_option( 'mo_email' ); ?></h2>
 				</div><!-- .inf-header-->	
 			</div><!-- .site-branding -->
 
