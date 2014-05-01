@@ -31,19 +31,19 @@ get_header(); ?>
 					<ul>
 						<li class="categorias">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tv-categoria.png" />
-							<a href="<?php echo home_url(); ?>/categoria/tv">IPTV</a>
+							<a href="<?php echo home_url(); ?>/tipo/tv">IPTV</a>
 						</li>
 						<li class="categorias">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dth-categoria.png" />
-							<a href="<?php echo home_url(); ?>/categoria/dht">DTH</a>
+							<a href="<?php echo home_url(); ?>/tipo/dht">DTH</a>
 						</li>
 						<li class="categorias">
 							<img <img class="img-cat" src="<?php echo get_stylesheet_directory_uri(); ?>/images/catv-categoria.png" />
-							<a href="<?php echo home_url(); ?>/categoria/catv">CATV</a>
+							<a href="<?php echo home_url(); ?>/tipo/catv">CATV</a>
 						</li>
 						<li class="categorias">
 							<img class="img-cat" src="<?php echo get_stylesheet_directory_uri(); ?>/images/cabo-categoria.png" />
-							<a href="<?php echo home_url(); ?>/categoria/cabo">CABO</a>
+							<a href="<?php echo home_url(); ?>/tipo/cabo">CABO</a>
 						</li>
 					</ul>	
 				</div>

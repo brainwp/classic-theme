@@ -1070,32 +1070,40 @@ object {
 	width: 20%;
 }
 
-.nav-categorias li {
+.nav-categorias li a {
 	width: 142px;
 	text-align: left;
-	background: #056E6A;
 	line-height: 50px;
 	margin-bottom: 18px;
-	box-shadow: 3px 3px 3px #052F2E;
+	box-shadow: 2px 2px 2px #052F2E;
+	color: #FFFFFF;
+    font-family: pt sans narrow;
+    font-size: 1.6em;
+    text-indent: 58px;
+    text-decoration: none;
+    display: block;
 }
 
-.nav-categorias li.cabo {
+.nav-categorias li a:hover, .nav-categorias li a:active {
+	box-shadow: 1px 1px 1px #052F2E;
+	margin: 0 0 18px 1px;
+}
+
+.nav-categorias li.cabo a {
 	background: url('images/cabo-categoria-peq.png') no-repeat 6px 6px #056E6A;
 }
 
-.nav-categorias li.catv {
+.nav-categorias li.catv a {
 	background: url('images/catv-categoria-peq.png') no-repeat 6px 6px #056E6A;
 }
 
-.nav-categorias li.dth {
+.nav-categorias li.dth a {
 	background: url('images/dth-categoria-peq.png') no-repeat 6px 6px #056E6A;
 }
 
-.nav-categorias li.iptv {
+.nav-categorias li.iptv a {
 	background: url('images/tv-categoria-peq.png') no-repeat 8px 7px #056E6A;
 }
-
-
 
 .nav-categorias ul {
 	list-style: none;
@@ -1109,18 +1117,13 @@ object {
 }
 
 .nav-categorias a {
-    color: #FFFFFF;
-    font-family: pt sans narrow;
-    font-size: 1.6em;
-    margin-left: 58px;
-    text-decoration: none;
+
 }
 
 .produtos-archive {
 	float: left;
     max-width: 900px;
 }
-
 
 /* Tablets*/
 
