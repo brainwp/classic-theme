@@ -1002,6 +1002,33 @@ object {
 .posts-rel ul li {
 	margin: 20px 1% 10px 1%;
 	font-size: 0.8em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.posts-rel ul li a {
+	color: #666;
+	text-decoration: none;
+}
+
+.posts-rel ul li a:hover {
+	color: #056e6a;
+}
+
+.posts-rel ul li a.mais {
+	color: #666;
+	text-decoration: none;
+	padding: 10px 12px;
+	background-color: #DDD;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.posts-rel ul li a.mais:hover {
+	background-color: #056e6a;
+	color: #FFF;
 }
 
 /* Archive Produtos */
