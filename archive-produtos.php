@@ -29,12 +29,26 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 		<div class="content-1100">
+
+					<?php
+					$add_class_taxonomy = new add_class_taxonomy();
+					$args = array(
+						'orderby'            => 'name',
+						'order'              => 'ASC',
+						'style'              => 'list',
+						'hide_empty'         => 0,
+						'hierarchical'       => 1,
+						'title_li'           => '',
+						'show_option_none'   => '',
+						'number'             => null,
+						'current_category'   => 0,
+						'taxonomy'           => 'tipos',
+						'walker' => $add_class_taxonomy,
+					); ?>
+
 				<div class="nav-categorias">
 					<ul>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tv-categoria-peq.png" />IPTV</a></li>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dth-categoria-peq.png" />DTH</a></li>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/catv-categoria-peq.png" />CATV</a></li>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cabo-categoria-peq.png" />CABO</a></li>
+						<?php wp_list_categories( $args ); ?> 
 					</ul>	
 				</div>
 				<div class="produtos-archive">
