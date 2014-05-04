@@ -67,7 +67,7 @@ get_header(); ?>
 
 							<?php endwhile; ?>
 
-							<?php classic_theme_paging_nav(); ?>
+						<!--	<?php // classic_theme_paging_nav(); ?> -->
 
 						<?php else : ?>
 
