@@ -944,8 +944,7 @@ object {
 	float: left;
 	margin-left: 6%;
     width: 50%;
-	height: 500px;
-	margin-bottom: 55px;
+	margin-bottom: 30px;
 	overflow: hidden;
 }
 
@@ -964,6 +963,7 @@ object {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	border: 3px solid #DADADA;
 }
 
 .entry-footer .edit-link a:hover {
@@ -1002,6 +1002,11 @@ object {
 	max-width: 320px;
 	min-width: 230px;
 	list-style: none;
+}
+
+.posts-rel ul {
+	float: left;
+	padding-bottom: 20px;
 }
 
 .produtos-archive {
