@@ -698,12 +698,6 @@ object {
     min-height: 100%;
     width: 100%;
     overflow: hidden;
-}
-
-
-/* Content definition */
-.wrapper{
-	width: auto;
 	background: url('images/bg-content.png');
 }
 
