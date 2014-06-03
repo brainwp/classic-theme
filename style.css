@@ -355,7 +355,7 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #068e8b;
 }
 a:visited {
 	color: purple;
@@ -363,7 +363,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #056e6a;
 }
 
 /*--------------------------------------------------------------
@@ -714,12 +714,14 @@ object {
 }
 
 .site-branding {
-	height: 165px;
+	height: 130px;
 	margin: 0 auto;
     max-width: 1000px;
 }
 
 .logo {
+	width: 168px;
+	height: 95px;
 	float: left;
 	margin: 20px 0 0 60px ;
 }
@@ -728,15 +730,14 @@ object {
 	float: right;
 	width: 40%;
 	height: auto;
-	margin: 52px 80px 0 0 ;
-	}
+	margin: 35px 80px 0 0 ;
+}
 
 .inf-texto {
 	font-size: 1.2em;
 	float: right;
 	width: auto;
 	color: #fff;
-	font-weight:bold
 	padding:0;
 }
 
@@ -746,7 +747,7 @@ object {
 }
 
 .main-navigation {
-	background: #056e6a;
+	background: #068e8b;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     clear: both;
     display: block;
@@ -759,7 +760,7 @@ object {
     color: #fff;
     display: block;
     font-family: pt sans narrow;
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: inherit;
     line-height: 2.1em;
     padding: 0 1.12em;
@@ -773,10 +774,35 @@ object {
 }
 
 /* Home */
+
+.content-home {
+	width: 90%;
+	clear: both;
+	display: block;
+	margin: 10px 0 25px;
+	padding: 10px 0;
+}
+
 .slider-home {
 	width: auto;
-	max-width: 850px;
-	margin: 40px auto;
+	float: left;
+	max-width: 700px;
+	margin: 20px auto 40px;
+}
+
+.slider-home img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.slider-home .caption-wrap {
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 .pjc-slideshow-container {
@@ -821,7 +847,7 @@ object {
 
 .faixa-inferior {
 	width: 100%;
-	background: url('images/bg-rodape.png') #067e7c;
+	background: url("images/bg-rodape.png") repeat scroll 0 0 #E9E9E9;
 	display: table;
 }
 
@@ -835,18 +861,18 @@ object {
 	float:left;
 	width: 45%;
 	margin: 40px 0 40px 40px;
+	text-align: center;
 }
 
 .titulo-inferior {
-	background: #6ccab8;
+	background: #068E8B;
 	color: #fff;
-	font-size: 2em;
-	box-shadow: 6px 6px 3px #052f2e;
-	margin-bottom: 34px;
-    padding-left: 15px;
+	font-size: 1.2em;
+	box-shadow: 2px 2px 2px #052F2E;
+	margin: 0 auto 10px auto;
     display: inline-block;
     text-transform: uppercase;
-    padding: 0 15px;
+    padding: 5px 18px;
 }
 
 .imagens-cliente {
@@ -859,13 +885,21 @@ object {
 	float:left;
 	width: 45%;
 	margin: 40px 0 0 20px;
+	text-align: center;
+	border-left: 2px solid #CCC;
+	padding-left: 15px;
+}
+
+.site-main.home {
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 /* Footer */
 
 .site-footer {
 	clear: both;
-	background: #0b6365;
+	background: #068E8B;
 	color: #fff;
     bottom: 0;
     margin: -15px 0 -25px 0;
@@ -881,7 +915,7 @@ object {
 
 #redes {
     float: right;
-    margin: 15px 5px 0 0;
+    margin: 8px 0 0 0;
 }
 
 #redes > * {
@@ -896,7 +930,7 @@ object {
 
 .direitos {
 	float: left;
-	margin: 23px;
+	margin: 15px 0;
 }
 
 #facebook {
@@ -944,6 +978,7 @@ object {
 	float: left;
 	margin-left: 6%;
     width: 50%;
+    max-width: 400px;
 	margin-bottom: 30px;
 	overflow: hidden;
 }
@@ -953,6 +988,7 @@ object {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	border: 1px solid #CCC;
 }
 
 .entry-footer .edit-link a {
@@ -972,8 +1008,9 @@ object {
 }
 
 .caixa-produto-descricao {
-	float: right;
-	width: 40%;
+   float: left;
+    margin-left: 30px;
+    width: 40%;
 }
 
 .posts-rel {
@@ -1075,7 +1112,7 @@ object {
 	overflow: hidden;
 }
 
-.nav-categorias {
+.nav-categorias, .nav-categorias.home {
 	float: left;
 	margin: 20px 0 0 0;
 	width: 20%;
@@ -1089,8 +1126,8 @@ object {
 	box-shadow: 2px 2px 2px #052F2E;
 	color: #FFFFFF;
     font-family: pt sans narrow;
-    font-size: 1.6em;
-    text-indent: 58px;
+    font-size: 1.2em;
+    text-indent: 60px;
     text-decoration: none;
     display: block;
 }
@@ -1101,19 +1138,19 @@ object {
 }
 
 .nav-categorias li.cabo a {
-	background: url('images/cabo-categoria-peq.png') no-repeat 6px 6px #056E6A;
+	background: url('images/cabo-categoria-peq.png') no-repeat 10px 6px #068e8b;
 }
 
 .nav-categorias li.catv a {
-	background: url('images/catv-categoria-peq.png') no-repeat 6px 6px #056E6A;
+	background: url('images/catv-categoria-peq.png') no-repeat 10px 6px #068e8b;
 }
 
-.nav-categorias li.dth a {
-	background: url('images/dth-categoria-peq.png') no-repeat 6px 6px #056E6A;
+.nav-categorias li.sat a {
+	background: url('images/sat-categoria-peq.png') no-repeat 10px 6px #068e8b;
 }
 
 .nav-categorias li.iptv a {
-	background: url('images/tv-categoria-peq.png') no-repeat 8px 7px #056E6A;
+	background: url('images/tv-categoria-peq.png') no-repeat 12px 7px #068e8b;
 }
 
 .nav-categorias ul {
@@ -1128,12 +1165,37 @@ object {
 }
 
 .nav-categorias a {
+}
 
+.nav-categorias.home{
+	margin: 10px 0 0 25px;
+}
+
+.nav-categorias.home h2 {
+	margin-bottom: 15px;
+}
+
+.nav-categorias.home h2 a {
+	text-decoration: none;
+	font-size: 2.4em;
+	color: #404040;
+}
+
+.nav-categorias.home h2 a:hover {
+	color: #056e6a;
 }
 
 .produtos-archive {
 	float: left;
     max-width: 900px;
+}
+
+.wpcf7-form input[type="submit"] {
+	background: #068e8b;
+	box-shadow: none;
+	color: #FFF;
+	border: none;
+	padding: 15px 25px;
 }
 
 /* Tablets*/
