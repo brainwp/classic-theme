@@ -1028,7 +1028,7 @@ object {
 .posts-rel h2, .produtos-archive h2 {
 	font-size: 1.5em;
 	padding: 0.3em 0;
-}	
+}
 
 .posts-rel li {
 	width: 23%;
@@ -1049,6 +1049,31 @@ object {
 .produtos-archive {
 	width: 80%;
 	float: left;
+}
+
+.produtos-archive .inlineSearch {
+	padding: 7px 12px;
+	border: 1px solid #068e8b;
+	font-family: 'PT Sans Narrow','sans-serif';
+	margin: 0 0 10px 10px;
+}
+
+.produtos-archive .inlineSubmit {
+	font-family: 'PT Sans Narrow','sans-serif';
+	background: #068e8b;
+	color: #FFF;
+	margin: -1px 0 0 5px;
+	padding: 10px 15px 8px;
+	box-shadow: none;
+	border: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-shadow: none;
+}
+
+.produtos-archive .inlineSubmit:hover {
+	background: #006765;
+	box-shadow: none;
 }
 
 .produtos-archive .image {
