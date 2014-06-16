@@ -68,6 +68,13 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
+		'name' => 'Endereço',
+		'desc' => 'Adicione aqui o Endereço',
+		'id' => 'mo_endereco',
+		'std' => '',
+		'type' => 'text');
+
+	$options[] = array(
 		'name' => 'Facebook',
 		'desc' => 'Adicione aqui a URL para o Facebook. Lembre-se de adicionar o http://',
 		'id' => 'mo_facebook',

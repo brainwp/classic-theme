@@ -15,7 +15,7 @@
 	
 	<footer class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<div class="direitos">Todos os direitos reservados</div>	
+			<div class="direitos"><?php echo of_get_option( 'mo_endereco' ); ?></div>	
 
 			
 			<div id="redes">
