@@ -701,6 +701,9 @@ object {
 	background: url('images/bg-content.png');
 }
 
+.entry-content p {
+	text-align: justify;
+}
 
 /* Header */
 
