@@ -1011,6 +1011,8 @@ object {
    float: left;
     margin-left: 30px;
     width: 40%;
+    background: none repeat scroll 0 0 #eee;
+    padding: 20px 35px 0;
 }
 
 .posts-rel {
