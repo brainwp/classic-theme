@@ -1092,6 +1092,10 @@ object {
 	margin: 0;
 }
 
+.produtos-archive li {
+    min-height: 280px;
+}
+
 .produtos-archive ul li {
 	width: 31%;
 	margin: 20px 1% 10px 1%;
