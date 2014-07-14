@@ -779,18 +779,17 @@ object {
 /* Home */
 
 .content-home {
-	width: 90%;
 	clear: both;
-	display: block;
-	margin: 10px 0 25px;
-	padding: 10px 0;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 77%;
 }
 
 .slider-home {
 	width: auto;
-	float: left;
 	max-width: 740px;
-	margin: 20px auto 40px;
+	margin: 20px auto;
 }
 
 .slider-home img {
@@ -811,6 +810,12 @@ object {
 .pjc-slideshow-container {
 	min-width: 100%;
 }
+
+.titulo-prod-home {
+	float: left;
+    margin-left: 15px;
+    width: 136px;
+}    
 
 .area-categorias {
 	max-width: 850px;
@@ -1147,16 +1152,15 @@ object {
 }
 
 .nav-categorias, .nav-categorias.home {
-	float: left;
-	margin: 20px 0 0 0;
-	width: 20%;
+	margin: 25px 0 0 108px;
+    width: 80%;
 }
 
 .nav-categorias li a {
 	width: 142px;
 	text-align: left;
 	line-height: 50px;
-	margin-bottom: 18px;
+	margin-right: 10px;
 	box-shadow: 2px 2px 2px #052F2E;
 	color: #FFFFFF;
     font-family: pt sans narrow;
@@ -1164,11 +1168,11 @@ object {
     text-indent: 60px;
     text-decoration: none;
     display: block;
+    float: left; 
 }
 
 .nav-categorias li a:hover, .nav-categorias li a:active {
 	box-shadow: 1px 1px 1px #052F2E;
-	margin: 0 0 18px 1px;
 }
 
 .nav-categorias li.cabo a {
@@ -1202,7 +1206,7 @@ object {
 }
 
 .nav-categorias.home{
-	margin: 10px 0 0 25px;
+	margin: 45px auto;
 }
 
 .nav-categorias.home h2 {

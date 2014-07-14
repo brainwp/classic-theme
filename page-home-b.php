@@ -37,7 +37,7 @@ get_header(); ?>
 					); ?>
 
 				<div class="nav-categorias home">
-					<h2><a href="<?php echo home_url(); ?>/produtos">Produtos</a></h2>
+					<div class="titulo-prod-home"><h2><a href="<?php echo home_url(); ?>/produtos">Produtos</a></h2></div>
 					<ul>
 						<?php wp_list_categories( $args ); ?> 
 					</ul>
