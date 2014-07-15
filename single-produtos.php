@@ -24,7 +24,16 @@
 			<div class="posts-rel">
 				<h1>Produtos Relacionados</h1>
 				<ul>
-					<?php $relacionados = new WP_Query( array( 'post_type' => 'produtos', 'posts_per_page' => 3 ) ); ?>
+					<?php
+					$current_term = $wp_query->queried_object;
+					var_dump($current_term);
+					echo $current_term->slug;
+					$args_r = array(
+						'post_type' => 'produtos',
+						'posts_per_page' => 3,
+						'tipos' => $current_term->slug,
+					);
+					$relacionados = new WP_Query( $args_r ); ?>
 					<?php while ( $relacionados->have_posts() ) : $relacionados->the_post(); ?>
 					<?php if ( has_post_thumbnail() ) {
 						$thumb_relacionados = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );

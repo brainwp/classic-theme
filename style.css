@@ -867,7 +867,7 @@ object {
 
 .marcas-content {
 	float:left;
-	width: 45%;
+	width: 31%;
 	margin: 40px 0 40px 40px;
 	text-align: center;
 }
@@ -891,7 +891,7 @@ object {
 
 .clientes-content {
 	float:left;
-	width: 45%;
+	width: 57%;
 	margin: 40px 0 0 20px;
 	text-align: center;
 	border-left: 2px solid #CCC;
