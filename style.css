@@ -1151,12 +1151,31 @@ object {
 	overflow: hidden;
 }
 
-.nav-categorias, .nav-categorias.home {
+.nav-categorias.home {
 	margin: 25px 0 0 108px;
     width: 80%;
 }
 
+.nav-categorias {
+	float: left;
+	margin: 20px 0 0 0;
+	width: 20%;
+}
+
 .nav-categorias li a {
+	width: 142px;
+	text-align: left;
+	line-height: 50px;
+	margin-bottom: 18px;
+	box-shadow: 2px 2px 2px #052F2E;
+	color: #FFFFFF;
+	font-family: pt sans narrow;
+	text-indent: 60px;
+	text-decoration: none;
+	display: block;
+}
+
+.nav-categorias.home li a {
 	width: 142px;
 	text-align: left;
 	line-height: 50px;
@@ -1169,6 +1188,10 @@ object {
     text-decoration: none;
     display: block;
     float: left; 
+}
+
+.nav-categorias.home li a:hover, .nav-categorias.home li a:active {
+	box-shadow: 1px 1px 1px #052F2E;
 }
 
 .nav-categorias li a:hover, .nav-categorias li a:active {
@@ -1202,12 +1225,6 @@ object {
 	float: left;
 }
 
-.nav-categorias a {
-}
-
-.nav-categorias.home{
-	margin: 45px auto;
-}
 
 .nav-categorias.home h2 {
 	margin-bottom: 15px;
