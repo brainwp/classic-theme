@@ -972,7 +972,6 @@ object {
 }
 
 /* Single Produtos */
-
 .content-1000 {
 	max-width: 1000px;
 	margin: 40px auto;
@@ -1254,6 +1253,12 @@ object {
 }
 
 /* Tablets*/
+
+@media (max-width: 1500px) {
+	.last-relacionado {
+		display: none;
+	}
+}
 
 @media screen and (min-width: 301px) and (max-width: 950px) {
 	.categorias {
