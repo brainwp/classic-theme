@@ -786,6 +786,10 @@ object {
     width: 77%;
 }
 
+.content-home p {
+	text-align: justify;
+}
+
 .slider-home {
 	width: auto;
 	max-width: 740px;
