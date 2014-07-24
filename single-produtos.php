@@ -25,26 +25,65 @@
 				<h1>Produtos Relacionados</h1>
 				<ul>
 					<?php
-					$current_term = $wp_query->queried_object;
-					var_dump($current_term);
-					echo $current_term->slug;
-					$args_r = array(
-						'post_type' => 'produtos',
-						'posts_per_page' => 3,
-						'tipos' => $current_term->slug,
-					);
-					$relacionados = new WP_Query( $args_r ); ?>
-					<?php while ( $relacionados->have_posts() ) : $relacionados->the_post(); ?>
+						$count = '';
+						$orig_post = $post;
+						global $post;
+						$queried_term = get_query_var( 'tipos' );
+						$terms = get_terms( 'tipos', 'slug='. $queried_term );
+						
+						if ($terms) {
+						$terms_ids = array();
+						foreach ($terms as $individual_term) {
+							//$terms_ids[] = $individual_term->term_id;
+							$x = $x . $individual_term->term_id . ",";
+						}
+
+
+						$x = rtrim( $x, ',' );
+						$args = array(
+							'post__not_in' => array( $post->ID ),
+							'posts_per_page'=>4, // Number of related posts to display.
+							'caller_get_posts'=>1,
+							'post_type' => 'produtos',
+							'tax_query' => array(
+												array(
+													'taxonomy' => 'tipos',
+													'terms' => $x,
+												)
+											),
+							'orderby' => 'rand'
+						);
+						
+						$my_query = new wp_query( $args );
+
+						while( $my_query->have_posts() ) {
+						$my_query->the_post();
+						?>
+						<?php if ( $count == 3 ) {
+							$class = 'class="last-relacionado"';
+						} else {
+							$class = '';
+						}
+						; ?>
 					<?php if ( has_post_thumbnail() ) {
 						$thumb_relacionados = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 						} else {
 						$thumb_relacionados = get_template_directory_uri() . "/images/default-classic-500.png";
 					} ?>
-					<li><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumb_relacionados; ?>"></a>
+					<li <?php echo $class; ?>><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumb_relacionados; ?>"></a>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					</li>
+						
+						<? 
+						$count++;
+							}
+						}
+						$post = $orig_post;
+						wp_reset_query();
 
-					<?php endwhile; wp_reset_query(); ?>
+
+
+?>
 				</ul>
 			</div><!-- .content-1100 -->
 		</main><!-- #main -->
