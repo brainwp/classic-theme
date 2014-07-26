@@ -441,7 +441,9 @@ a:active {
 	.site-branding {
 		padding-left: 
 	}
-}
+
+} /* termina media 600px */
+
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -461,6 +463,9 @@ a:active {
 	text-align: right;
 	width: 50%;
 }
+
+
+
 
 /*--------------------------------------------------------------
 6.0 Accessibility
@@ -1065,6 +1070,10 @@ object {
 	float: left;
 }
 
+.produtos-archive ul {
+	margin: 0;
+}
+
 .produtos-archive .inlineSearch {
 	padding: 7px 12px;
 	border: 1px solid #068e8b;
@@ -1094,11 +1103,6 @@ object {
 	width: 100%;
 	height: 170px;
 	overflow: hidden;
-}
-
-.produtos-archive ul {
-	padding: 0;
-	margin: 0;
 }
 
 .produtos-archive li {
@@ -1270,6 +1274,48 @@ object {
 		width: 155px;
 		margin: 4% 4% 4% 19%;
 	}
+
+	.produtos-archive {
+    width: 94%;
+    margin: 0 0 0 3%!important;
+	}
+	
+	.produtos-archive ul li {
+		min-width: 120px;
+	}
+
+	.busca {
+		display: none !important;
+	}
+
+	.nav-categorias {
+		width: 100%;	
+	}
+
+	.nav-categorias li a {
+		float: left;
+		margin-left: 3.7%;	
+		text-align: center;
+		width: 20%;
+	}
+	
+	.nav-categorias li.cabo a {
+		background: url('images/cabo-categoria-peq.png') no-repeat 21% 6px #068e8b;
+	}
+
+	.nav-categorias li.catv a {
+		background: url('images/catv-categoria-peq.png') no-repeat 21% 6px #068e8b;
+	}
+
+	.nav-categorias li.sat a {
+		background: url('images/sat-categoria-peq.png') no-repeat 21% 6px #068e8b;
+	}
+
+	.nav-categorias li.iptv a {
+		background: url('images/tv-categoria-peq.png') no-repeat 21% 7px #068e8b;
+	}	
+
+
 }
 
 /* Celulares */

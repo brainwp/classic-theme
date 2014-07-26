@@ -52,13 +52,13 @@ get_header(); ?>
 					</ul>	
 				</div>
 				<div class="produtos-archive">
-
-					<form id="searchform" action="<?php bloginfo('url'); ?>/" method="get">
-						<input class="inlineSearch" type="text" name="s" value="" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == 'Enter a keyword') {this.value = '';}" />
-						<input type="hidden" name="post_type" value="produtos" />
-						<input class="inlineSubmit" id="searchsubmit" type="submit" alt="Buscar" value="Buscar" />
-					</form>
-
+					<div class="busca">
+						<form id="searchform" action="<?php bloginfo('url'); ?>/" method="get">
+							<input class="inlineSearch" type="text" name="s" value="" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == 'Enter a keyword') {this.value = '';}" />
+							<input type="hidden" name="post_type" value="produtos" />
+							<input class="inlineSubmit" id="searchsubmit" type="submit" alt="Buscar" value="Buscar" />
+						</form>
+					</div>
 					<ul>
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
