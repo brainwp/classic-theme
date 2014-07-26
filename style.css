@@ -781,6 +781,7 @@ object {
 	color: #fff;
 }
 
+
 .main-navigation li.current-menu-item {
 	background: #3FAEA5;
 	color:#fff;
@@ -982,8 +983,12 @@ object {
 /* Page */
 
 .content-850 {
-	max-width: 850px;
+	max-width: 711px;
 	margin: 40px auto;
+}
+
+.page-header {
+	margin-left: 28px;
 }
 
 /* Single Produtos */
@@ -1040,7 +1045,7 @@ object {
 .posts-rel {
 	clear: both;
 	margin: 0 auto;
-	max-width: 1570px;
+	max-width: 920px;
 	overflow: hidden;
 }
 
@@ -1294,9 +1299,9 @@ object {
 	}
 
 	.nav-categorias {
-		width: 100%;	
+		display: none !important;	
 	}
-
+/* nav categorias para tablet
 	.nav-categorias li a {
 		float: left;
 		margin-left: 3.7%;	
@@ -1319,7 +1324,7 @@ object {
 	.nav-categorias li.iptv a {
 		background: url('images/tv-categoria-peq.png') no-repeat 21% 7px #068e8b;
 	}	
-
+*/
 
 }
 
