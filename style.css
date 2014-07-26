@@ -1372,4 +1372,12 @@ object {
 		display: none;
 	}
 
+	.zilla-column-last, .zilla-one-half {
+		width: 50%;
+		padding: 5%;
+	}
+
+	header.entry-header {
+		padding-left: 27px;
+	}
 }
