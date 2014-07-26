@@ -423,26 +423,7 @@ a:active {
 	cursor: pointer;
 	display: none;
 }
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-		
-	}
 
-	.main-navigation ul {
-		display: none;
-	}
-	
-	.inf-header{
-		display: none;
-	}
-
-	.site-branding {
-		padding-left: 
-	}
-
-} /* termina media 600px */
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
@@ -1037,6 +1018,7 @@ object {
 .caixa-produto-descricao {
    float: left;
     margin-left: 30px;
+    margin-bottom: 50px;
     width: 40%;
     background: none repeat scroll 0 0 #eee;
     padding: 20px 35px 0;
@@ -1271,6 +1253,9 @@ object {
 	padding: 15px 25px;
 }
 
+
+/* RESPONSIVO */
+
 /* Tablets*/
 
 @media (max-width: 1500px) {
@@ -1279,7 +1264,7 @@ object {
 	}
 }
 
-@media screen and (min-width: 301px) and (max-width: 950px) {
+@media screen and (max-width: 950px) {
 	.categorias {
 		width: 155px;
 		margin: 4% 4% 4% 19%;
@@ -1291,7 +1276,7 @@ object {
 	}
 	
 	.produtos-archive ul li {
-		min-width: 120px;
+		min-width: 175px;
 	}
 
 	.busca {
@@ -1328,9 +1313,26 @@ object {
 
 }
 
-/* Celulares */
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+		color: white;
+		margin-left: 30px;
+	}
 
-@media (max-width: 300px) {
+	.main-navigation ul {
+		display: none;
+	}
+	
+	.inf-header{
+		display: none;
+	}
+
+	.site-branding {
+		padding-left: 
+	}
+
 	.categorias {
 		margin: 4% 4% 4% 35%;
     	width: 155px;
@@ -1340,5 +1342,34 @@ object {
 	    margin: 0 26%;
 	    width: 68%;
 	}
+
+
+	.produtos-archive ul li {
+    	min-width: 240px;
+    	margin-left: 5%;
+	}
 	
+	.produto-img {
+		width: 80%;
+	}
+
+	.caixa-produto-descricao {
+	    width: 80%;
+	}
+
+	.posts-rel {
+		display: none;
+	}
+
+	.marcas-content, .clientes-content {
+		width: 37%;
+		margin: 4%;
+		min-width: 220px;
+		border-left: none;
+	}
+
+	.content-home img {
+		display: none;
+	}
+
 }
