@@ -781,6 +781,11 @@ object {
 	color: #fff;
 }
 
+.main-navigation li.current-menu-item {
+	background: #3FAEA5;
+	color:#fff;
+}
+
 /* Home */
 
 .content-home {
