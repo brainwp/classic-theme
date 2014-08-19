@@ -34,8 +34,8 @@
 						if ($terms) {
 						$terms_ids = array();
 						foreach ($terms as $individual_term) {
-							//$terms_ids[] = $individual_term->term_id;
-							$x = $x . $individual_term->term_id . ",";
+							$terms_ids[] = $individual_term->term_id;
+							$x = $individual_term->term_id . ",";
 						}
 
 
@@ -43,7 +43,7 @@
 						$args = array(
 							'post__not_in' => array( $post->ID ),
 							'posts_per_page'=>4, // Number of related posts to display.
-							'caller_get_posts'=>1,
+							'ignore_sticky_posts'=>1,
 							'post_type' => 'produtos',
 							'tax_query' => array(
 												array(
